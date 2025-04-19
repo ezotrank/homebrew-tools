@@ -5,12 +5,12 @@
 class Opfwd < Formula
   desc "1Password CLI Forwarding tool for seamless access from remote Linux machines"
   homepage "https://github.com/ezotrank/opfwd"
-  version "0.1.10"
+  version "0.1.11"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ezotrank/opfwd/releases/download/v0.1.10/opfwd_0.1.10_darwin_arm64.tar.gz"
-      sha256 "eab3580b143651f368ff046e711cbbb1ec01c7fd3026b5ed1babd6bd2c4d1987"
+      url "https://github.com/ezotrank/opfwd/releases/download/v0.1.11/opfwd_0.1.11_darwin_arm64.tar.gz"
+      sha256 "495f01fb490543685ffb29613b5582cdb15eb749ee2580d82c1baec1f8e288b8"
 
       def install
         bin.install "opfwd"
@@ -21,8 +21,8 @@ class Opfwd < Formula
   on_linux do
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ezotrank/opfwd/releases/download/v0.1.10/opfwd_0.1.10_linux_arm64.tar.gz"
-        sha256 "808385b5b151679e0c4565ff8ec329eb652c4aebdfa0301039cecc6d3ee3aae4"
+        url "https://github.com/ezotrank/opfwd/releases/download/v0.1.11/opfwd_0.1.11_linux_arm64.tar.gz"
+        sha256 "ecd6ced903c4bcbacfb74c27158f5ccf69580c9498300ce53742b63a8ce645a9"
 
         def install
           bin.install "opfwd"
